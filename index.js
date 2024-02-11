@@ -32,6 +32,10 @@ client.on("messageCreate", (message) => {
       let newURL = url.replace("twitter.com", "vxtwitter.com");
       message.reply("EMBED: " + newURL);
     }
+    if (url.includes("reddit.com")) {
+      let newURL = url.replace("reddit.com", "rxddit.com");
+      message.reply("EMBED: " + newURL);
+    }
   });
 });
 
