@@ -1,2 +1,2 @@
-# discord-embed-bot
- Simple bot for embedding videos in discord channels
+# discord-embed
+ Simple Discord Bot to embed videos in channels
