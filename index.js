@@ -28,7 +28,7 @@ client.on("messageCreate", (message) => {
       let newURL = url.replace("tiktok.com", "vxtiktok.com");
       message.reply("EMBED: " + newURL);
     }
-    if (url.includes("twitter.com" && !url.includes("vxtwitter.com"))) {
+    if (url.includes("twitter.com") && !url.includes("vxtwitter.com")) {
       let newURL = url.replace("twitter.com", "vxtwitter.com");
       message.reply("EMBED: " + newURL);
     }
