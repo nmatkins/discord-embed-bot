@@ -24,15 +24,15 @@ client.on("messageCreate", (message) => {
   const urls = message.content.match(/\bhttps?:\/\/\S+/gi) || [];
   urls.forEach((url) => {
     //add or modify these to change embed behavior
-    if (url.includes("tiktok.com")) {
+    if (url.includes("tiktok.com") && !url.includes("vxtiktok.com")) {
       let newURL = url.replace("tiktok.com", "vxtiktok.com");
       message.reply("EMBED: " + newURL);
     }
-    if (url.includes("twitter.com")) {
+    if (url.includes("twitter.com" && !url.includes("vxtwitter.com"))) {
       let newURL = url.replace("twitter.com", "vxtwitter.com");
       message.reply("EMBED: " + newURL);
     }
-    if (url.includes("reddit.com")) {
+    if (url.includes("reddit.com") && !url.includes("rxddit.com")) {
       let newURL = url.replace("reddit.com", "rxddit.com");
       message.reply("EMBED: " + newURL);
     }
